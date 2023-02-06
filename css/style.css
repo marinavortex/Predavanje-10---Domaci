@@ -41,7 +41,7 @@
 	background-color: #f8f8f9;
 	border: 0 solid rgba(0, 0, 0, 0.125);
 	flex-direction: column;
-	width: 200px;
+	width: calc((90vw - 20px) / 3);
 }
 
 .productImg {
@@ -85,4 +85,14 @@
 	font-size: 0.6rem;
 	text-align: center;
 	padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+	.product {
+		width: calc((90vw - 10px) / 2);
+	}
+
+	.header h1 {
+		font-size: 3rem;
+	}
 }
